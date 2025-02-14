@@ -1,0 +1,71 @@
+/* Styles de base */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+/* Conteneur principal */
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+}
+
+/* Sections */
+.menu-item {
+    width: 30%;
+    background-color: #ddd;
+    color: black;
+    border: 1px solid black;
+    padding: 20px;
+    position: relative;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+/* Titres */
+.title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #d9534f;
+    color: black;
+    padding: 5px 10px;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+.chicken .title { background-color: #f7b2ad; }
+.beef .title { background-color: #d9534f; }
+.sushi .title { background-color: #f7e28a; }
+
+
+@media (min-width: 992px) {
+    .menu-item { width: 30%; }
+}
+
+
+@media (max-width: 991px) {
+    .menu-item {
+        width: 45%;
+    }
+
+    .menu-item:last-child {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .menu-item {
+        width: 100%;
+    }
+}
